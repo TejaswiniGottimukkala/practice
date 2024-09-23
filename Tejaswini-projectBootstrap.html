@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tejaswini bootstrap</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+img{
+    width: 90%;
+    border-radius: 100%;
+	padding:5px;
+    margin: 10px auto;
+    box-shadow: 0 0 20px #6f42c1;
+}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+<div class="navbar-header">
+<a class="navbar-brand" href="#">WebSiteName</a>
+</div>
+<ul class="nav navbar-nav">
+<li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span>Home</a></li>
+<li class="dropdown"><a data-toggle="dropdown" href="#">career<span class="caret"></span></a>
+<ul class="dropdown-menu" >
+<li><a href="#">Action</a></li>
+<li><a href="#">Another action</a></li>
+<li><a href="#">Something else here</a></li>
+</ul>
+</li>
+<li class="active"><a href="#"><span class="glyphicon glyphicon-book"></span>About us</a></li>
+<li class="active"><a href="#"><span class="glyphicon glyphicon-file"></span>portfolio</a></li>
+<li class="active"><a href="#"><span class="glyphicon glyphicon-earphone"></span>Contact us</a></li>
+<li><a href="#"><span class="glyphicon glyphicon-education" ></span> Academics</a></li>
+</ul>
+<ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+</div>
+</nav>
+<!-- Jumbotron -->
+<div class="p-5 text-center bg-image rounded-3" style="
+    background-image: url('https://mdbcdn.b-cdn.net/img/new/slides/041.webp');
+    height: 400px;
+  ">
+  <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+    <div class="d-flex justify-content-center align-items-center h-100">
+      <div class="text-white">
+        <h1 class="mb-3">Heading</h1>
+        <h4 class="mb-3">Subheading</h4>
+        <a class="btn btn-outline-light btn-lg" href="#!" role="button">Call to action</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Jumbotron -->
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<p>left text</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+</div>
+<div class="col-sm-6">
+<p>Right text</p>
+<p class="text-light bg-dark">.text-light</p>
+<h5>h5 Bootstrap heading (14px)</h5>
+<h6>h6 Bootstrap heading (12px)</h6>
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-primary">.text-primary</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-6">
+<p>left text</p>
+<h4>h4 Bootstrap heading (18px)</h4>
+<h5>h5 Bootstrap heading (14px)</h5>
+<h6>h6 Bootstrap heading (12px)</h6>
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+</div>
+<div class="col-sm-6">
+<p>Right text</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart1" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart1", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-6">
+<p>left text</p>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+<body>
+<canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+<script>
+var xyValues = [
+  {x:50, y:7},
+  {x:60, y:8},
+  {x:70, y:8},
+  {x:80, y:9},
+  {x:90, y:9},
+  {x:100, y:9},
+  {x:110, y:10},
+  {x:120, y:11},
+  {x:130, y:14},
+  {x:140, y:14},
+  {x:150, y:15}
+];
+
+new Chart("myChart", {
+  type: "scatter",
+  data: {
+    datasets: [{
+      pointRadius: 4,
+      pointBackgroundColor: "rgb(0,0,255)",
+      data: xyValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    scales: {
+      xAxes: [{ticks: {min: 40, max:160}}],
+      yAxes: [{ticks: {min: 6, max:16}}],
+    }
+  }
+});
+</script>
+</div>
+<div class="col-sm-6">
+<p>Right text</p>
+<p class="text-light bg-dark">.text-light</p>
+<h5>h5 Bootstrap heading (14px)</h5>
+<h6>h6 Bootstrap heading (12px)</h6>
+<p class="text-left">Left aligned text on all viewport sizes.</p>
+<p class="text-primary">.text-primary</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-right">Right aligned text on all viewport sizes.</p>
+</div>
+</div>
+<div class="card bg-info" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+<br>
+<br>
+<div class="container-fluid">
+<div class="row bg-info">
+<div class="col-sm-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-3">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="container bg-info">
+<h1 style="text-align:center">BTS</h1>
+<div class="row">
+<div class="col-sm-6">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+<div class="col-sm-6">
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0kf0V1-7rSFYFtNvRazhLil1E-glCtQseefO5i3cQf6IC_p4fmg4BV1i_pFgwJfQQ2O0&usqp=CAU" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<br>
+<br>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-body-tertiary text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Company name
+          </h6>
+          <p>
+            Here you can use rows and columns to organize your footer content. Lorem ipsum
+            dolor sit amet, consectetur adipisicing elit.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i>Andhra Pradesh,India</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@example.com
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+          <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
